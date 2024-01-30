@@ -75,16 +75,31 @@ WSGI_APPLICATION = 'project2.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'djangoapp',
+#         'USER': 'postgres',
+#         'PASSWORD': 'afsal123',
+#         'HOST': 'localhost',   # Set to the host where your PostgreSQL server is running
+#         'PORT': '5432',        # Set to the port your PostgreSQL server is listening on
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'djangoapp',
+        'URL': 'postgresql://postgres:2e*-*d5g3b6Ge13g5Cad2E6AeGDgggGB@roundhouse.proxy.rlwy.net:30075/railway',
+        'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'afsal123',
-        'HOST': 'localhost',   # Set to the host where your PostgreSQL server is running
-        'PORT': '5432',        # Set to the port your PostgreSQL server is listening on
+        'PASSWORD': '2e*-*d5g3b6Ge13g5Cad2E6AeGDgggGB',
+        'HOST': 'roundhouse.proxy.rlwy.net',
+        'PORT': 30075,
     }
 }
+
+
+
 
 
 # Password validation
