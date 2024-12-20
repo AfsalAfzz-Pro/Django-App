@@ -86,20 +86,24 @@ WSGI_APPLICATION = 'project2.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'URL': 'postgresql://postgres:2e*-*d5g3b6Ge13g5Cad2E6AeGDgggGB@roundhouse.proxy.rlwy.net:30075/railway',
+#         'NAME': 'railway',
+#         'USER': 'postgres',
+#         'PASSWORD': '2e*-*d5g3b6Ge13g5Cad2E6AeGDgggGB',
+#         'HOST': 'roundhouse.proxy.rlwy.net',
+#         'PORT': 30075,
+#     }
+# }
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'URL': 'postgresql://postgres:2e*-*d5g3b6Ge13g5Cad2E6AeGDgggGB@roundhouse.proxy.rlwy.net:30075/railway',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': '2e*-*d5g3b6Ge13g5Cad2E6AeGDgggGB',
-        'HOST': 'roundhouse.proxy.rlwy.net',
-        'PORT': 30075,
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
 }
-
-
-
 
 
 # Password validation
